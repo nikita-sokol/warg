@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+html, body {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 400;
+  background: #E5E5E5;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+form, label, input, select, option,
+ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+}
+a, button {
+  cursor: pointer;
+}

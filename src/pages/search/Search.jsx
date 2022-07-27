@@ -4,7 +4,7 @@ import SearchForm from './ui/SearchForm'
 
 const Search = () => {
    return (
-      <div className='page container'>
+      <div className='container'>
          <div className="back"><Link to="/">На главную</Link></div>
          <SearchForm btnText={'НАЙТИ'} placehldrText={'поиск'}/>
          <SearchForm btnText={'GO'} placehldrText={'search'}/>

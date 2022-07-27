@@ -1,6 +1,4 @@
 .list {
-   &-box {
-   }
    cursor: pointer;
    display: inline-flex;
    flex-direction: column;
@@ -27,8 +25,6 @@
    &._active {
       cursor: default;
       padding-left: 9px;
-      // padding-top: 1px;
-      // padding-bottom: 1px;
       .list-item {
          display: block;
          @for $i from 1 through 3 {

@@ -22,13 +22,26 @@ const Widget = () => {
       setIsActiveForm(!isActiveForm);
    };
 
+   const insertText = () => {
+      const length = selectedElems.length;
+      if (length===0) {
+         return 'не выбрано элементов.'
+      }
+      if (length===1) {
+         return 'выбран 1 элемент:'
+      }
+      if (length>=2) {
+         return `выбрано ${length} элемента:`
+      }
+   }
+
    return (
       <div className='container'>
          <Back />
 
          <div className="widget">
             <h2 className="w-header">Выбор элементов</h2>
-            <p className="w-text">На данный момент у вас выбрано 2 элемента:</p>
+            <p className="w-text">{`На данный момент у вас ${insertText()}`}</p>
             <div className="w-selected">
                {selectedElems.map(elem => {
                   return <SelectedElement nameElem={elem} key={elem} selectedElems={selectedElems} setSelectedElems={setSelectedElems} />;

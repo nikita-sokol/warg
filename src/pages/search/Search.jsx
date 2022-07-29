@@ -6,8 +6,10 @@ const Search = () => {
    return (
       <div className='container'>
          <Back />
-         <SearchForm btnText={'НАЙТИ'} placehldrText={'поиск'} />
-         <SearchForm btnText={'GO'} placehldrText={'search'} />
+         <p className='explanation'>Сверстал 3-мя способами: при помощи Grid, Flex и Table.</p>
+         <SearchForm mode={'flex'} btnText={'НАЙТИ'} placehldrText={'поиск'} />
+         <SearchForm mode={'grid'} btnText={'GO'} placehldrText={'search'} />
+         <SearchForm mode={'table'} btnText={'FIND'} placehldrText={'search'} />
       </div>
    );
 };

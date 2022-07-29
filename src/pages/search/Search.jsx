@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Back from '../../ui/Back.jsx';
 import SearchForm from './ui/SearchForm'
 
 const Search = () => {
    return (
       <div className='container'>
-         <div className="back"><Link to="/">На главную</Link></div>
-         <SearchForm btnText={'НАЙТИ'} placehldrText={'поиск'}/>
-         <SearchForm btnText={'GO'} placehldrText={'search'}/>
+         <Back />
+         <SearchForm btnText={'НАЙТИ'} placehldrText={'поиск'} />
+         <SearchForm btnText={'GO'} placehldrText={'search'} />
       </div>
    );
 };

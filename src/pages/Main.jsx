@@ -6,13 +6,12 @@ const Main = () => {
 
    return (
       <div className='main container'>
-         <h1>Задания</h1>
-         <ul>
-            <li><Link to="/search">search</Link></li>
-            <li><Link to="/list">list</Link></li>
-            <li><Link to="/article">article</Link></li>
-            <li><Link to="/widget">widget</Link></li>
-         </ul>
+         <ol className='nav'>
+            <li className='nav-item'><Link className='nav-link' to="/search">search</Link></li>
+            <li className='nav-item'><Link className='nav-link' to="/list">list</Link></li>
+            <li className='nav-item'><Link className='nav-link' to="/article">article</Link></li>
+            <li className='nav-item'><Link className='nav-link' to="/widget">widget</Link></li>
+         </ol>
       </div>
    );
 };

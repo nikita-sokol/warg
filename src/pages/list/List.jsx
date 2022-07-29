@@ -1,5 +1,5 @@
-import React, {useState,useRef, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useRef, useEffect } from 'react';
+import Back from '../../ui/Back.jsx';
 
 const List = () => {
 
@@ -25,20 +25,20 @@ const List = () => {
    };
    const listEl = useRef(null);
 
-   useEffect(()=>{
-      document.addEventListener('click',deactivate);
-      return ()=>{
-         document.removeEventListener('click',deactivate);
+   useEffect(() => {
+      document.addEventListener('click', deactivate);
+      return () => {
+         document.removeEventListener('click', deactivate);
       }
-   },[])
+   }, [])
 
    return (
       <div className='container'>
-         <div className="back"><Link to="/">На главную</Link></div>
+         <Back />
          <div className="list-box">
             <ul ref={listEl} className={activeList ? 'list _active' : 'list'} onClick={activateList}>
                {list.map(item => {
-                  return <li className={activeItem===item ? 'list-item _active' : 'list-item'} key={item} onClick={()=>handlerActiveItem(item)}>{item}</li>;
+                  return <li className={activeItem === item ? 'list-item _active' : 'list-item'} key={item} onClick={() => handlerActiveItem(item)}>{item}</li>;
                })}
                <div className={activeList ? 'indicator _arrow' : 'indicator'}>
                   <div className="indicator-line"></div>

@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Back from '../../ui/Back.jsx';
 
 const Article = () => {
 
-
    return (
       <div className='container'>
-         <div className="back"><Link to="/">На главную</Link></div>
+         <Back />
          <article className='article'>
             <h3 className='article-header'>Почему не рассматриваются заявки с жалобами на нарушение Правил игры?</h3>
             <p className='article-content'>
